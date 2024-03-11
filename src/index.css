@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --color-marine-blue: hsl(213, 96%, 18%);
+  --color-purplish-blue: hsl(243, 100%, 62%);
+  --color-pastel-blue: hsl(228, 100%, 84%);
+  --color-light-blue: hsl(206, 94%, 87%);
+  --color-strawberry-red: hsl(354, 84%, 57%);
+  --color-cool-grey: hsl(231, 11%, 63%);
+  --color-light-grey: hsl(229, 24%, 87%);
+  --color-magnolia: hsl(217, 100%, 97%);
+  --color-alabaster: hsl(231, 100%, 99%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--color-light-blue);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  max-width: 900px;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.sidebar {
+  background-image: url("./assets/images/bg-sidebar-desktop.svg");
+  width: 274px;
+  height: 568px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.sidebar .sidebar-item {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.sidebar .sidebar-item .step-nr {
+  padding: 8px 12px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+.sidebar .sidebar-item .step {
+  color: var(--color-light-grey);
+  font-size: 12px;
+}
+
+.sidebar .sidebar-item .step-title {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.sidebar .sidebar-item.active .step-nr {
+  background-color: var(--color-pastel-blue);
+  color: var(--color-marine-blue);
+}
